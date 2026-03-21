@@ -27,7 +27,7 @@ Visit my professional showcase at: [Portfolio Link] (or local development at `ht
 ## 🛠️ Getting Started
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/harrisraj1421/portfolio-v2.git
+   git clone https://github.com/harrisraj1421/harrisraj-portfolio.git
    ```
 2. **Install dependencies**:
    ```bash
