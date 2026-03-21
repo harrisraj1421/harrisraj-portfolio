@@ -9,6 +9,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Art from "@/components/Art";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const scrollyRef = useRef<HTMLDivElement>(null);
@@ -39,6 +40,8 @@ export default function Home() {
       <Art />
       
       <Contact />
+      
+      <Footer />
       
       {/* Scroll indicator for hero */}
       <div className="fixed bottom-10 left-10 z-30 flex flex-col items-center gap-4 opacity-30">

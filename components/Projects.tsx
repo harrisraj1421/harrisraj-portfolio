@@ -82,14 +82,6 @@ export default function Projects() {
         ))}
       </div>
 
-      <footer className="mt-48 flex flex-col items-center justify-between gap-8 md:flex-row">
-        <div className="text-white/20 text-xs tracking-widest uppercase font-bold">
-          © 2026 B. HARRISRAJ PORTFOLIO
-        </div>
-        <div className="flex gap-12 text-xs font-medium text-white/40 uppercase tracking-widest hover:text-white transition-colors cursor-pointer">
-           <a href="https://github.com/harrisraj1421" target="_blank" rel="noopener noreferrer">GitHub</a> / <a href="https://www.linkedin.com/in/harrisraj-balaji-9a12512a2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-      </footer>
     </section>
   );
 }
