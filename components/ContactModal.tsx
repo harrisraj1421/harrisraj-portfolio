@@ -67,11 +67,11 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
             </button>
 
             {formState !== "success" ? (
-              <>
-                <h2 className="text-3xl font-bold tracking-tighter text-white md:text-5xl">
+              <div className="text-center md:text-left">
+                <h2 className="text-3xl font-black tracking-tighter text-white md:text-5xl">
                   Quick Message
                 </h2>
-                <p className="mt-4 font-light text-white/40">
+                <p className="mt-4 font-light text-white/40 text-sm md:text-base">
                   {formState === "error" ? (
                     <span className="text-red-400">Oops! Something went wrong. Please try again or email me directly.</span>
                   ) : (
@@ -79,7 +79,8 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   )}
                 </p>
 
-                <form onSubmit={handleSubmit} className="mt-12 space-y-6 text-left">
+                <form onSubmit={handleSubmit} className="mt-10 md:mt-12 space-y-5 md:space-y-6 text-left">
+
                   <div className="space-y-2">
                     <label className="text-[10px] font-bold uppercase tracking-widest text-white/30">Your Name</label>
                     <input
@@ -129,8 +130,9 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     )}
                   </button>
                 </form>
-              </>
+              </div>
             ) : (
+
               <div className="flex flex-col items-center justify-center py-12 text-center">
                 <CheckCircle2 size={64} className="text-white mb-6" />
                 <h2 className="text-3xl font-bold text-white tracking-tighter">MESSAGE SENT!</h2>
