@@ -44,12 +44,13 @@ export default function Home() {
       <Footer />
       
       {/* Scroll indicator for hero */}
-      <div className="fixed bottom-10 left-10 z-30 flex flex-col items-center gap-4 opacity-30">
+      <div className="fixed bottom-10 left-10 z-30 hidden sm:flex flex-col items-center gap-4 opacity-30">
         <div className="h-16 w-px bg-white/20" />
         <span className="text-[10px] font-bold uppercase tracking-[0.3em] overflow-hidden">
-          <span className="block animate-scroll-text">SCROLL TO DISCOVER</span>
+          <span className="block animate-scroll-text text-white">SCROLL TO DISCOVER</span>
         </span>
       </div>
+
     </main>
   );
 }

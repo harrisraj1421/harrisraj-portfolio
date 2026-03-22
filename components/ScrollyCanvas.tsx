@@ -109,16 +109,16 @@ export default function ScrollyCanvas({ scrollProgress }: ScrollyCanvasProps) {
       />
       
       {/* Overlay Layers Integrated */}
-      <div className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center">
+      <div className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center container-custom">
         {/* Section 1 */}
         <motion.div
           style={{ opacity: s1Opacity, y: s1Y }}
-          className="flex flex-col items-center text-center px-6"
+          className="flex flex-col items-center text-center px-4"
         >
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-white">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter text-white">
             B. HARRISRAJ.
           </h1>
-          <p className="mt-4 text-xs md:text-sm lg:text-base font-light text-white/40 uppercase tracking-[0.8em]">
+          <p className="mt-4 text-[10px] sm:text-xs md:text-sm font-light text-white/40 uppercase tracking-[0.5em] sm:tracking-[0.8em]">
             Creative Developer
           </p>
         </motion.div>
@@ -126,13 +126,13 @@ export default function ScrollyCanvas({ scrollProgress }: ScrollyCanvasProps) {
         {/* Section 2 */}
         <motion.div
           style={{ opacity: s2Opacity, y: s2Y }}
-          className="absolute left-10 md:left-24 lg:left-32 max-w-sm md:max-w-md lg:max-w-xl"
+          className="absolute left-6 md:left-12 lg:left-24 right-6 md:right-auto max-w-xl text-center md:text-left"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-medium leading-tight text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium leading-tight text-white tracking-tight">
             I build digital experiences.
           </h2>
-          <div className="mt-6 h-px w-12 bg-white/20" />
-          <p className="mt-6 text-sm md:text-base font-light text-white/40 leading-relaxed">
+          <div className="mt-6 h-px w-12 bg-white/20 mx-auto md:ml-0 md:mr-auto" />
+          <p className="mt-6 text-sm md:text-base font-light text-white/40 leading-relaxed max-w-md mx-auto md:mx-0">
             Creating immersive, high-performance web applications that merge 3D, motion, and interaction.
           </p>
         </motion.div>
@@ -140,17 +140,18 @@ export default function ScrollyCanvas({ scrollProgress }: ScrollyCanvasProps) {
         {/* Section 3 */}
         <motion.div
           style={{ opacity: s3Opacity, y: s3Y }}
-          className="absolute right-10 md:right-24 lg:right-32 text-right max-w-sm md:max-w-md lg:max-w-xl"
+          className="absolute right-6 md:right-12 lg:right-24 left-6 md:left-auto text-center md:text-right max-w-xl"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-medium leading-tight text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium leading-tight text-white tracking-tight">
             Bridging design and engineering.
           </h2>
-          <div className="mt-6 h-px w-12 bg-white/20 ml-auto" />
-          <p className="mt-6 text-sm md:text-base font-light text-white/40 leading-relaxed">
+          <div className="mt-6 h-px w-12 bg-white/20 mx-auto md:mr-0 md:ml-auto" />
+          <p className="mt-6 text-sm md:text-base font-light text-white/40 leading-relaxed max-w-md mx-auto md:ml-auto md:mr-0">
             Through technical excellence and creative intuition, I turn bold ideas into tangible realities.
           </p>
         </motion.div>
       </div>
+
 
       {!isLoaded && (
         <div className="absolute inset-0 flex items-center justify-center bg-background z-50">

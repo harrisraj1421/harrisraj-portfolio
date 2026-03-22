@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #121212;
+  --background: #0a0a0a;
   --foreground: #ffffff;
 }
 
@@ -12,6 +12,14 @@ body {
   background: var(--background);
   font-family: Inter, sans-serif;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 md:px-12 lg:px-24;
+  }
 }
 
 @layer utilities {
@@ -24,6 +32,24 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 @keyframes scroll-text {
   0% { transform: translateY(0); }
   50% { transform: translateY(100%); }
@@ -34,3 +60,4 @@ html {
 .animate-scroll-text {
   animation: scroll-text 3s cubic-bezier(0.7, 0, 0.3, 1) infinite;
 }
+

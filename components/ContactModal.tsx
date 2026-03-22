@@ -56,8 +56,9 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="fixed left-1/2 top-[10%] md:top-[12%] z-[101] w-[90%] max-w-xl -translate-x-1/2 -translate-y-0 rounded-[40px] border border-white/10 bg-[#121212]/95 p-8 md:p-16 shadow-2xl backdrop-blur-2xl max-h-[80vh] overflow-y-auto"
+            className="fixed left-1/2 top-[10%] md:top-[12%] z-[101] w-[92%] max-w-xl -translate-x-1/2 -translate-y-0 rounded-[48px] border border-white/5 bg-[#0a0a0a]/95 p-8 md:p-16 shadow-2xl backdrop-blur-2xl max-h-[85vh] overflow-y-auto"
           >
+
             <button
               onClick={onClose}
               className="absolute right-8 top-8 rounded-full bg-white/5 p-3 text-white transition-colors hover:bg-white/10"
