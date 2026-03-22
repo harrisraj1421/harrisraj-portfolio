@@ -51,13 +51,15 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
             className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm"
           />
           
-          {/* Modal Content */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="fixed left-1/2 top-[10%] md:top-[12%] z-[101] w-[92%] max-w-xl -translate-x-1/2 -translate-y-0 rounded-[48px] border border-white/5 bg-[#0a0a0a]/95 p-8 md:p-16 shadow-2xl backdrop-blur-2xl max-h-[85vh] overflow-y-auto"
-          >
+          {/* Modal Overlay Container */}
+          <div className="fixed inset-0 z-[101] flex items-center justify-center p-4 pointer-events-none">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="pointer-events-auto w-full max-w-xl rounded-[32px] md:rounded-[48px] border border-white/5 bg-[#0a0a0a]/95 p-8 md:p-16 shadow-2xl backdrop-blur-2xl max-h-[90vh] overflow-y-auto"
+            >
+
 
             <button
               onClick={onClose}
@@ -140,8 +142,10 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
               </div>
             )}
           </motion.div>
-        </>
-      )}
-    </AnimatePresence>
+        </div>
+      </>
+    )}
+  </AnimatePresence>
+
   );
 }
