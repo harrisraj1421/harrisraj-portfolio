@@ -9,7 +9,7 @@ export default function Contact() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="relative w-full bg-background py-24 md:py-32">
+    <section className="relative z-20 w-full bg-transparent py-24 md:py-32">
       {/* Contact Modal integration */}
       <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       

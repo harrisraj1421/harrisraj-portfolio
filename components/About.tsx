@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="relative w-full bg-background py-24 md:py-32 overflow-hidden">
+    <section id="about" className="relative z-20 w-full bg-transparent py-24 md:py-32 overflow-hidden">
       <div className="absolute top-0 right-0 h-64 w-64 rounded-full bg-white/5 blur-[120px]" />
       
       <div className="container-custom">

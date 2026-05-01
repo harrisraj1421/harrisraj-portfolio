@@ -31,7 +31,7 @@ const CERTIFICATIONS = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative w-full bg-background py-24 md:py-32">
+    <section id="skills" className="relative z-20 w-full bg-transparent py-24 md:py-32">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row items-end justify-between mb-24 gap-8">
           <div className="max-w-2xl">

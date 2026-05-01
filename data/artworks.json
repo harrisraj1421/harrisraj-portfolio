@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Cyberpunk Nocturne",
+    "category": "Digital Art",
+    "year": "2024",
+    "medium": "Digital Painting",
+    "description": "An exploration of urban isolation in a hyper-connected future, inspired by the neon-drenched streets of Neo-Tokyo.",
+    "image": "/art/cyberpunk.png",
+    "width": 1200,
+    "height": 1600,
+    "tags": ["cyberpunk", "neon", "urban"]
+  },
+  {
+    "id": 2,
+    "title": "Ephemeral Echoes",
+    "category": "Concept Art",
+    "year": "2023",
+    "medium": "Photobashing & Digital Paint",
+    "description": "A series of landscape studies focusing on the fleeting nature of light in the high altitudes of the Himalayas.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
+    "width": 1600,
+    "height": 900,
+    "tags": ["landscape", "mountains", "light"]
+  },
+  {
+    "id": 3,
+    "title": "The Silent Observer",
+    "category": "Sketches",
+    "year": "2024",
+    "medium": "Charcoal on Paper",
+    "description": "A high-contrast study of emotion and silence through traditional medium, focusing on the eyes as the window to the soul.",
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop",
+    "width": 1000,
+    "height": 1400,
+    "tags": ["portrait", "charcoal", "expressive"]
+  },
+  {
+    "id": 4,
+    "title": "Minimalist Flow",
+    "category": "Illustrations",
+    "year": "2023",
+    "medium": "Vector Illustration",
+    "description": "Exploring the intersection of geometry and organic movement in a restricted color palette.",
+    "image": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?q=80&w=2067&auto=format&fit=crop",
+    "width": 1200,
+    "height": 1200,
+    "tags": ["minimalism", "vector", "geometric"]
+  },
+  {
+    "id": 5,
+    "title": "Neon Reverie",
+    "category": "Digital Art",
+    "year": "2024",
+    "medium": "3D Composition",
+    "description": "A dreamlike state captured in vibrant colors, pushing the boundaries of surrealism in a digital space.",
+    "image": "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2070&auto=format&fit=crop",
+    "width": 1400,
+    "height": 1000,
+    "tags": ["surrealism", "color", "3d"]
+  },
+  {
+    "id": 6,
+    "title": "Stellar Horizon",
+    "category": "Concept Art",
+    "year": "2024",
+    "medium": "Mixed Media",
+    "description": "Envisioning the first colony on a distant exoplanet, balancing scientific plausibility with artistic wonder.",
+    "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2072&auto=format&fit=crop",
+    "width": 1600,
+    "height": 900,
+    "tags": ["space", "sci-fi", "horizon"]
+  }
+]

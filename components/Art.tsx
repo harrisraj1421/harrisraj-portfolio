@@ -11,7 +11,7 @@ const ART_GALLERY = [
 
 export default function Art() {
   return (
-    <section id="art" className="relative w-full bg-background py-24 md:py-32">
+    <section id="art" className="relative z-20 w-full bg-transparent py-24 md:py-32">
       <div className="container-custom">
         <div className="text-left mb-24">
           <h2 className="text-[10px] font-bold tracking-[0.5em] text-white/20 uppercase mb-6">
@@ -69,6 +69,23 @@ export default function Art() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="mt-20 flex justify-center"
+        >
+          <a 
+            href="/art" 
+            target="_blank"
+            className="group relative px-12 py-5 bg-white text-black text-[10px] font-bold uppercase tracking-[0.4em] rounded-full overflow-hidden transition-all hover:pr-16 active:scale-95"
+          >
+            <span className="relative z-10">Enter Full Gallery</span>
+            <span className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all">→</span>
+          </a>
+        </motion.div>
       </div>
     </section>
 

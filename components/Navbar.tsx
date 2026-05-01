@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
-  { name: "Art", href: "#art" },
+  { name: "Art", href: "/art", target: "_blank" },
   { name: "Resume", href: "#resume" },
   { name: "Contact", href: "#contact" },
 ];
@@ -33,7 +33,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container-custom">
-        <div className="relative flex items-center justify-between">
+        <div className="relative flex items-center justify-between gap-4">
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -49,6 +49,8 @@ export default function Navbar() {
               <a
                 key={item.name}
                 href={item.href}
+                target={item.target || "_self"}
+                rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
                 className="px-6 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-white/50 transition-all hover:text-white hover:bg-white/10 rounded-full"
               >
                 {item.name}
@@ -57,10 +59,10 @@ export default function Navbar() {
           </div>
 
           {/* Contact Button (Desktop) */}
-          <div className="hidden md:block">
+          <div className="hidden md:block flex-shrink-0">
             <a 
               href="#contact" 
-              className="px-8 py-3 bg-white text-black text-[10px] font-bold uppercase tracking-[0.2em] rounded-full hover:bg-white/90 transition-all active:scale-95"
+              className="px-8 py-3 bg-white/5 border border-white/20 text-white text-[10px] font-bold uppercase tracking-[0.2em] rounded-full hover:bg-white hover:text-black transition-all duration-300 active:scale-95 whitespace-nowrap inline-flex items-center justify-center backdrop-blur-md"
             >
               Get in Touch
             </a>
@@ -93,6 +95,8 @@ export default function Navbar() {
                 <motion.a
                   key={item.name}
                   href={item.href}
+                  target={item.target || "_self"}
+                  rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}

@@ -10,6 +10,7 @@ import Skills from "@/components/Skills";
 import Art from "@/components/Art";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { SmokeBackground } from "@/components/ui/spooky-smoke-animation";
 
 export default function Home() {
   const scrollyRef = useRef<HTMLDivElement>(null);
@@ -28,20 +29,28 @@ export default function Home() {
         <ScrollyCanvas scrollProgress={scrollYProgress} />
       </div>
 
-      {/* Main Content Sections */}
-      <About />
-      
-      <div id="projects">
-        <Projects />
-      </div>
+      {/* Main Content Sections with Smoke Background */}
+      <section className="relative w-full bg-black">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <SmokeBackground smokeColor="#3B82F6" opacity={0.6} density={60} />
+        </div>
 
-      <Skills />
-      
-      <Art />
-      
-      <Contact />
-      
-      <Footer />
+        <div className="relative z-10">
+          <About />
+          
+          <div id="projects">
+            <Projects />
+          </div>
+
+          <Skills />
+          
+          <Art />
+          
+          <Contact />
+          
+          <Footer />
+        </div>
+      </section>
       
       {/* Scroll indicator for hero */}
       <div className="fixed bottom-10 left-10 z-30 hidden sm:flex flex-col items-center gap-4 opacity-30">
